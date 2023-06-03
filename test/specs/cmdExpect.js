@@ -21,7 +21,7 @@ describe("Tester comment utiliser les éléments (Expect) du navigateur", () => 
     });
   });
 
-  describe("Utilisation de toBePresent", () => {
+  describe("Utilisation de toHaveHref", () => {
     it("sur remove.bg/fr", async () => {
       await browser.url("https://www.remove.bg/fr");
       const link = await $("//a[@href='/fr/help']");
