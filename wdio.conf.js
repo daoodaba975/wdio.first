@@ -22,7 +22,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/cmdExpect.js"],
+  specs: ["./test/specs/**/testEnd2EndGmail.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -131,7 +131,7 @@ exports.config = {
   // See the full list at http://mochajs.org/
   mochaOpts: {
     ui: "bdd",
-    timeout: 60000,
+    timeout: 180000,
   },
   //
   // =====
