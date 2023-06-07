@@ -1,8 +1,8 @@
 require("dotenv").config();
-const email = process.env.GMAIL_EMAIL;
-const bademail = process.env.GMAIL_BAD_EMAIL;
-const pass = process.env.GMAL_PASSWORD;
-const badpass = process.env.GMAIL_BAD_PASSWORD;
+const email = process.env.EMAIL;
+const badEmail = process.env.BAD_EMAIL;
+const pass = process.env.PASSWORD;
+const badPass = process.env.BAD_PASSWORD;
 
 describe("Test End2End connexion compte Gmail pour ouvrir mail", () => {
   describe("Login à Gmail", () => {
@@ -60,7 +60,7 @@ describe("Test End2End connexion compte Gmail pour ouvrir mail", () => {
       await expect(boutonSuivant).toBeDisplayed();
       await browser.pause(3000);
 
-      await champEmail.setValue(bademail);
+      await champEmail.setValue(badEmail);
       await boutonSuivant.click();
       await browser.pause(5000);
 
@@ -85,7 +85,7 @@ describe("Test End2End connexion compte Gmail pour ouvrir mail", () => {
       await expect(boutonSuivant).toBeDisplayed();
       await browser.pause(3000);
 
-      await champEmail.setValue(bademail);
+      await champEmail.setValue(badEmail);
       await boutonSuivant.click();
       await browser.pause(5000);
 
@@ -209,7 +209,7 @@ describe("Test End2End connexion compte Gmail pour ouvrir mail", () => {
 
       await expect(champPassword).toBeExisting();
 
-      await champPassword.setValue(badpass);
+      await champPassword.setValue(badPass);
       await boutonSuivant.click();
       await browser.pause(8000);
 
