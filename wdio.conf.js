@@ -22,7 +22,7 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/testEnd2EndGmail.js"],
+  specs: ["./test/specs/**/testEnd2EndTwitter.js"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
